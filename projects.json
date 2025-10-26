@@ -1,0 +1,13 @@
+[
+  {
+    "name": "RxJS Operator Finder",
+    "repo": "hansschenker/rxjs-operator-finder",
+    "url": "https://hansschenker.github.io/rxjs-operator-finder/",
+    "tags": [
+      "rxjs",
+      "operators",
+      "tooling"
+    ],
+    "description": "Find RxJS operators by order, time/value, and intent ('further')."
+  }
+]
