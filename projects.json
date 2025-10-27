@@ -1,8 +1,8 @@
 [
   {
     "name": "RxJS Operator Finder",
-    "repo": "hansschenker/rxjs-operator-finder",
-    "url": "https://hansschenker.github.io/rxjs-operator-finder/",
+    "repo": "hansschenker/rxjs-operator-finder-links",
+    "url": "https://hansschenker.github.io/rxjs-operator-finder-links/",
     "tags": [
       "rxjs",
       "operators",
