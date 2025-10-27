@@ -1,0 +1,16 @@
+[
+  {
+    "name": "RxJS Operator Finder (Links)",
+    "repo": "hansschenker/rxjs-operator-finder-links",
+    "url": "https://hansschenker.github.io/rxjs-operator-finder-links/",
+    "tags": ["rxjs"],
+    "description": "Quick links to RxJS operator references and resources."
+  },
+  {
+    "name": "RxJS Operators Project",
+    "repo": "hansschenker/rxjs-operators-project",
+    "url": "https://hansschenker.github.io/rxjs-operators-project/",
+    "tags": ["rxjs"],
+    "description": "Playground and demos for common RxJS operator patterns."
+  }
+]

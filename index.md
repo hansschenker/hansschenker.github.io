@@ -5,7 +5,8 @@ layout: home
 hero:
   name: "Hans Schenker Projects"
   text: "A list of Rxjs tutorial projects"
-  tagline: My great project tagline
+  tagline: Learn Rxjs with these projects
+  image: 'assets/rxjs-logo.png'
   actions:
     - theme: brand
       text: Markdown Examples
