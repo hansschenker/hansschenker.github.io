@@ -8,7 +8,7 @@ Edit `projects.json` and append entries like:
 {
   "name": "RxJS Operator Finder",
   "repo": "hansschenker/rxjs-operator-finder",
-  "url": "https://hansschenker.github.io/rxjs-operator-finder/",
+  "url": "https://hansschenker.github.io/rxjs-operator-finder-links",
   "tags": ["rxjs", "operators", "tooling"],
   "description": "Find RxJS operators by order, time/value, and intent ('further')."
 }
