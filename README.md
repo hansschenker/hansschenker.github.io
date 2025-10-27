@@ -1,6 +1,7 @@
 # hansschenker.github.io — RxJS Project Index
 
-A simple static index that lists and links to your RxJS project pages hosted under `hansschenker.github.io/<repo>/`.
+A simple static index that lists and links to your RxJS project pages hosted under `hansschenker.
+on the github.io/<repo>/`.
 
 ## Add projects
 Edit `projects.json` and append entries like:
