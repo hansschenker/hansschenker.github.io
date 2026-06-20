@@ -9,5 +9,16 @@
       "tooling"
     ],
     "description": "Find RxJS operators by order, time/value, and intent ('further')."
+  },
+  {
+    "name": "RxJS Operators \u2014 Human-Friendly Names",
+    "repo": "hansschenker/rxjs-operators-custom-names",
+    "url": "https://hansschenker.github.io/rxjs-operators-custom-names/",
+    "tags": [
+      "rxjs",
+      "operators",
+      "naming"
+    ],
+    "description": "Every RxJS operator re-exported with a descriptive alias (map \u2192 transformWith, debounceTime \u2192 afterSilenceOf\u2026) plus live interactive demos."
   }
 ]
