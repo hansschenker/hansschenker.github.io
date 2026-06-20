@@ -8,7 +8,7 @@
       "operators",
       "tooling"
     ],
-    "description": "Find RxJS operators by order, time/value, and intent ('further')."
+    "description": "Find RxJS operators by order, time/value, and intent."
   },
   {
     "name": "RxJS Operators \u2014 Human-Friendly Names",
@@ -19,6 +19,17 @@
       "operators",
       "naming"
     ],
-    "description": "Every RxJS operator re-exported with a descriptive alias (map \u2192 transformWith, debounceTime \u2192 afterSilenceOf\u2026) plus live interactive demos."
+    "description": "Every RxJS operator re-exported with a descriptive alias plus live interactive demos."
+  },
+  {
+    "name": "RxJS Operators Documentation",
+    "repo": "hansschenker/rxjs-operators-documentation",
+    "url": "https://hansschenker.github.io/rxjs-operators-documentation/",
+    "tags": [
+      "rxjs",
+      "operators",
+      "docs"
+    ],
+    "description": "265-page comprehensive RxJS operator reference using the Eight-Policy Framework."
   }
 ]
