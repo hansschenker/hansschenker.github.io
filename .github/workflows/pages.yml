@@ -18,36 +18,22 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: npm
 
-      - name: Install deps
-        run: npm ci || npm i
+      - run: npm ci || npm i
 
-      # If your site lives at repo root:
-      - name: Build VitePress
-        run: npx vitepress build
+      - run: npx vitepress build
 
-      # If your site lives in /docs, use this instead:
-      # - run: npx vitepress build docs
+      - uses: actions/configure-pages@v5
 
-      - name: Debug: list build output
-        run: ls -R .vitepress/dist
-
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
+      - uses: actions/upload-pages-artifact@v3
         with:
           path: ./.vitepress/dist
-          # If you build docs/, use: path: ./docs/.vitepress/dist
 
   deploy:
     runs-on: ubuntu-latest
@@ -56,6 +42,5 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Deploy to GitHub Pages
+      - uses: actions/deploy-pages@v4
         id: deployment
-        uses: actions/deploy-pages@v4
