@@ -1,26 +1,26 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
 hero:
-  name: "Hans Schenker Projects"
-  text: "A list of Rxjs tutorial projects"
-  tagline: Learn Rxjs with these projects
-  image: 'assets/rxjs-logo.png'
+  name: Hans Schenker
+  text: RxJS Project Portfolio
+  tagline: Interactive demos, operator references, and tooling for RxJS developers.
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Browse Projects
+      link: /projects/
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: RxJS Operators — Human-Friendly Names
+    details: Every RxJS operator re-exported with a descriptive alias (map → transformWith, debounceTime → afterSilenceOf…) plus live interactive demos.
+    link: https://hansschenker.github.io/rxjs-operators-custom-names/
+    linkText: Open demo
+  - title: RxJS Operators Documentation
+    details: 265-page comprehensive operator reference using the Eight-Policy Framework — behavioral contracts, failure modes, and production guidance.
+    link: https://hansschenker.github.io/rxjs-operators-documentation/
+    linkText: Read docs
+  - title: RxJS Operator Finder
+    details: Find the right RxJS operator by order, time/value axis, and intent.
+    link: https://hansschenker.github.io/rxjs-operator-finder-links/
+    linkText: Find operators
 ---
-
