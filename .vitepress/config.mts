@@ -17,7 +17,7 @@ export default defineConfig({
     ],
 
     footer: {
-      message: 'Assisted by <a href="https://www.anthropic.com" target="_blank" rel="noopener"><img src="https://avatars.githubusercontent.com/u/76263028?s=20&v=4" width="18" height="18" style="vertical-align:middle;margin:0 4px 2px;border-radius:50%">Anthropic Claude</a>',
+      message: 'Assisted by <a href="https://www.anthropic.com" target="_blank" rel="noopener"><img src="https://claude.ai/apple-touch-icon.png" width="20" height="20" style="vertical-align:middle;margin:0 5px 2px;border-radius:4px">Anthropic Claude</a>',
       copyright: '© 2024 Hans Schenker'
     }
   }
