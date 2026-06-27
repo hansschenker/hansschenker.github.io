@@ -27,4 +27,8 @@ features:
     details: 16-module course covering reactive architecture, operator policies, flattening strategies, and state streams. The domain can change — the RxJS machine stays the same.
     link: https://netxpert.ch/rxjs-deep-dive-course/
     linkText: Start course
+  - title: RxJS Insights
+    details: 14 thematic analyses of RxJS derived from AI conversations, books, and personal research — conceptual deep dives into reactive programming.
+    link: https://github.com/hansschenker/rxjs-insights
+    linkText: View on GitHub
 ---
