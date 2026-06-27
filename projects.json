@@ -31,5 +31,16 @@
       "docs"
     ],
     "description": "265-page comprehensive RxJS operator reference using the Eight-Policy Framework."
+  },
+  {
+    "name": "RxJS Deep Dive Course",
+    "repo": "hansschenker/rxjs-deep-dive-course",
+    "url": "https://hansschenker.github.io/rxjs-deep-dive-course/",
+    "tags": [
+      "rxjs",
+      "course",
+      "typescript"
+    ],
+    "description": "16-module course covering reactive architecture, operator policies, flattening strategies, and state streams. The domain can change — the RxJS machine stays the same."
   }
 ]

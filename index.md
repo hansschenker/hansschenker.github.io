@@ -23,4 +23,8 @@ features:
     details: Find the right RxJS operator by order, time/value axis, and intent.
     link: https://hansschenker.github.io/rxjs-operator-finder-links/
     linkText: Find operators
+  - title: RxJS Deep Dive Course
+    details: 16-module course covering reactive architecture, operator policies, flattening strategies, and state streams. The domain can change — the RxJS machine stays the same.
+    link: https://hansschenker.github.io/rxjs-deep-dive-course/
+    linkText: Start course
 ---
