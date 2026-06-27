@@ -6,8 +6,7 @@ export default defineConfig({
   description: "A list of Rxjs tutorial projects",
   themeConfig: {
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Projects', link: '/projects/' }
+      { text: 'Home', link: '/' }
     ],
 
     sidebar: [],
