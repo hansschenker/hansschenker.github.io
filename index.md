@@ -17,4 +17,6 @@ features:
     link: https://netxpert.ch/rxjs-deep-dive-course/
   - title: RxJS Insights
     link: https://github.com/hansschenker/rxjs-insights
+  - title: RxJS Operator Semantics
+    link: https://netxpert.ch/rxjs-operator-semantics/
 ---
