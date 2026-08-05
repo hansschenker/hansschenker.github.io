@@ -19,4 +19,6 @@ features:
     link: https://github.com/hansschenker/rxjs-insights
   - title: RxJS Operator Semantics
     link: https://netxpert.ch/rxjs-operator-semantics/
+  - title: RxJS Operator Renaming
+    link: https://netxpert.ch/rxjs-operator-renaming/
 ---
