@@ -20,5 +20,6 @@ features:
   - title: RxJS Operator Semantics
     link: https://netxpert.ch/rxjs-operator-semantics/
   - title: RxJS Operator Renaming
+    details: A curried operator algebra for RxJS — roots dispatch on boundary combinators to the official operators, with an interactive root × boundary matrix.
     link: https://netxpert.ch/rxjs-operator-renaming/
 ---
