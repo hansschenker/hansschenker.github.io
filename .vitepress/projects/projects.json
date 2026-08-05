@@ -11,7 +11,7 @@
     "description": "Find RxJS operators by order, time/value, and intent."
   },
   {
-    "name": "RxJS Operators \u2014 Human-Friendly Names",
+    "name": "RxJS Operators — Human-Friendly Names",
     "repo": "hansschenker/rxjs-operators-custom-names",
     "url": "https://hansschenker.github.io/rxjs-operators-custom-names/",
     "tags": [
@@ -31,5 +31,49 @@
       "docs"
     ],
     "description": "265-page comprehensive RxJS operator reference using the Eight-Policy Framework."
+  },
+  {
+    "name": "RxJS Insights",
+    "repo": "hansschenker/rxjs-insights",
+    "url": "https://github.com/hansschenker/rxjs-insights",
+    "tags": [
+      "rxjs",
+      "research",
+      "concepts"
+    ],
+    "description": "14 thematic analyses of RxJS derived from AI conversations, books, and personal research."
+  },
+  {
+    "name": "RxJS Deep Dive Course",
+    "repo": "hansschenker/rxjs-deep-dive-course",
+    "url": "https://hansschenker.github.io/rxjs-deep-dive-course/",
+    "tags": [
+      "rxjs",
+      "course",
+      "typescript"
+    ],
+    "description": "16-module course covering reactive architecture, operator policies, flattening strategies, and state streams. The domain can change — the RxJS machine stays the same."
+  },
+  {
+    "name": "RxJS Operator Semantics",
+    "repo": "hansschenker/rxjs-operator-semantics",
+    "url": "https://netxpert.ch/rxjs-operator-semantics/",
+    "tags": [
+      "rxjs",
+      "operators",
+      "semantics"
+    ],
+    "description": "Semantic fingerprints for 111 RxJS operators — behavior descriptions generated from a twelve-coordinate semantic model."
+  },
+  {
+    "name": "RxJS Operator Renaming",
+    "repo": "hansschenker/rxjs-operator-renaming",
+    "url": "https://netxpert.ch/rxjs-operator-renaming/",
+    "tags": [
+      "rxjs",
+      "operators",
+      "renaming"
+    ],
+    "description": "A curried operator algebra for RxJS — roots dispatch on boundary combinators to the official operators, with an interactive root × boundary matrix."
   }
 ]

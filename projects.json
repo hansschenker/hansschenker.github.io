@@ -64,5 +64,16 @@
       "semantics"
     ],
     "description": "Semantic fingerprints for 111 RxJS operators — behavior descriptions generated from a twelve-coordinate semantic model."
+  },
+  {
+    "name": "RxJS Operator Renaming",
+    "repo": "hansschenker/rxjs-operator-renaming",
+    "url": "https://netxpert.ch/rxjs-operator-renaming/",
+    "tags": [
+      "rxjs",
+      "operators",
+      "renaming"
+    ],
+    "description": "A curried operator algebra for RxJS — roots dispatch on boundary combinators to the official operators, with an interactive root × boundary matrix."
   }
 ]
