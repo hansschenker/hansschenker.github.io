@@ -85,6 +85,6 @@
       "multicasting",
       "subjects"
     ],
-    "description": "Every multicasting strategy from RxJS 4 to RxJS 7 — mechanics, runnable samples per strategy, and the faithful-migration map."
+    "description": "Every multicasting strategy from RxJS 4 to RxJS 7 — mechanics, runnable samples per strategy, Vitest-pinned reset profiles, the faithful-migration map, and an interactive Reset Flags Playground."
   }
 ]

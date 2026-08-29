@@ -29,6 +29,9 @@ features:
     details: A curried operator algebra for RxJS — roots dispatch on boundary combinators to the official operators, with an interactive root × boundary matrix.
     link: https://netxpert.ch/rxjs-operator-renaming/
   - title: RxJS Subject Multicast Strategies
-    details: Every multicasting strategy from RxJS 4 to RxJS 7 — mechanics, runnable samples per strategy, and the faithful-migration map.
+    details: Every multicasting strategy from RxJS 4 to RxJS 7 — mechanics, runnable samples per strategy, Vitest-pinned reset profiles, and the faithful-migration map.
     link: https://netxpert.ch/rxjs-subject-multicast-strategies/
+  - title: RxJS Reset Flags Playground
+    details: Interactive demo — toggle share()'s three reset flags and a connector, then drive a live RxJS pipeline with subscribers, values, completions, and errors while a real-time log shows the router lifecycle.
+    link: https://netxpert.ch/rxjs-subject-multicast-strategies/guide/playground.html
 ---
