@@ -28,4 +28,7 @@ features:
   - title: RxJS Operator Renaming
     details: A curried operator algebra for RxJS — roots dispatch on boundary combinators to the official operators, with an interactive root × boundary matrix.
     link: https://netxpert.ch/rxjs-operator-renaming/
+  - title: RxJS Subject Multicast Strategies
+    details: Every multicasting strategy from RxJS 4 to RxJS 7 — mechanics, runnable samples per strategy, and the faithful-migration map.
+    link: https://netxpert.ch/rxjs-subject-multicast-strategies/
 ---

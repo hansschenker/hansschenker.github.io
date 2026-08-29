@@ -75,5 +75,16 @@
       "renaming"
     ],
     "description": "A curried operator algebra for RxJS — roots dispatch on boundary combinators to the official operators, with an interactive root × boundary matrix."
+  },
+  {
+    "name": "RxJS Subject Multicast Strategies",
+    "repo": "hansschenker/rxjs-subject-multicast-strategies",
+    "url": "https://netxpert.ch/rxjs-subject-multicast-strategies/",
+    "tags": [
+      "rxjs",
+      "multicasting",
+      "subjects"
+    ],
+    "description": "Every multicasting strategy from RxJS 4 to RxJS 7 — mechanics, runnable samples per strategy, and the faithful-migration map."
   }
 ]
