@@ -97,6 +97,6 @@
       "marble-tests",
       "visualization"
     ],
-    "description": "Fifty rxjs 7.8.2 marble tests and two pipelines, run through the real TestScheduler and played back one frame per column. Created with the help of Claude Fable 5.1."
+    "description": "Sixty rxjs 7.8.2 marble tests and two pipelines, run through the real TestScheduler and played back one frame per column. Created with the help of Claude Fable 5.1."
   }
 ]

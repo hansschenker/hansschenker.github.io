@@ -35,6 +35,6 @@ features:
     details: Interactive demo — toggle share()'s three reset flags and a connector, then drive a live RxJS pipeline with subscribers, values, completions, and errors while a real-time log shows the router lifecycle.
     link: https://netxpert.ch/rxjs-subject-multicast-strategies/guide/playground.html
   - title: RxJS Visualizer
-    details: Fifty rxjs 7.8.2 marble tests and two pipelines, run through the real TestScheduler and played back one frame per column — rings for expected values, fills for actual, every subscription bar from the scheduler's own log, and a text block that explains each operator. Created with the help of Claude Fable 5.1.
+    details: Sixty rxjs 7.8.2 marble tests and two pipelines, run through the real TestScheduler and played back one frame per column — rings for expected values, fills for actual, every subscription bar from the scheduler's own log, and a text block that explains each operator. Created with the help of Claude Fable 5.1.
     link: https://netxpert.ch/rxjs-visualizer/
 ---
