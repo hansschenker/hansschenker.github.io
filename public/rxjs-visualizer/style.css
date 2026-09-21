@@ -21,6 +21,12 @@ body {
   white-space: pre-wrap;
 }
 
+/* Recording mode (`?clean`): only the title, the credit, the note and the controls above the drawing. */
+.is-clean .rx-nav,
+.is-clean .rx-picker {
+  display: none;
+}
+
 /* The masthead: the title, and under it the credit line that the published pages carry too. */
 .rx-masthead {
   padding: 14px 20px 6px;

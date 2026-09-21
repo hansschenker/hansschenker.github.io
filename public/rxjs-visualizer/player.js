@@ -7,7 +7,18 @@
   const dataBlock = document.getElementById('spec-data');
   if (root === null || dataBlock === null) return;
   const data = JSON.parse(dataBlock.textContent);
-  const { frames, firstFrame, xStart, right, scale, frameMs, lanes, readouts } = data;
+  const { frames, firstFrame, xStart, right, scale, lanes, readouts } = data;
+
+  // `?frameMs=800` slows the playback, `?clean` hides the navigation and the picker, for recordings;
+  // the links on the page carry both along.
+  const params = new URLSearchParams(location.search);
+  const wanted = Number(params.get('frameMs'));
+  const frameMs = Number.isFinite(wanted) && wanted > 0 ? wanted : data.frameMs;
+  if (params.has('clean')) document.documentElement.classList.add('is-clean');
+  document.querySelectorAll('.rx-nav a, .rx-picker a').forEach((link) => {
+    link.search = location.search;
+  });
+  root.style.setProperty('--rx-step', `${frameMs}ms`);
 
   const stamped = Array.from(root.querySelectorAll('[data-from]')).map((element) => [element, Number(element.dataset.from)]);
   const future = document.getElementById('rx-spec-future');
