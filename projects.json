@@ -86,5 +86,17 @@
       "subjects"
     ],
     "description": "Every multicasting strategy from RxJS 4 to RxJS 7 — mechanics, runnable samples per strategy, Vitest-pinned reset profiles, the faithful-migration map, and an interactive Reset Flags Playground."
+  },
+  {
+    "name": "RxJS Visualizer",
+    "repo": "hansschenker/rxjs-visualizer",
+    "url": "https://netxpert.ch/rxjs-visualizer/",
+    "tags": [
+      "rxjs",
+      "operators",
+      "marble-tests",
+      "visualization"
+    ],
+    "description": "Fifty rxjs 7.8.2 marble tests and two pipelines, run through the real TestScheduler and played back one frame per column. Created with the help of Claude Fable 5.1."
   }
 ]

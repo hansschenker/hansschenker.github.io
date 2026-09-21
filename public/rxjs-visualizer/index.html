@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+<title>RxJS Visualizer</title>
+<link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+<header class="rx-masthead">
+  <h1>RxJS Visualizer</h1>
+  <p class="rx-credit">created with the help of Claude Fable 5.1</p>
+</header>
+<p class="rx-note">
+  <span class="rx-note-text">
+    Every page is an rxjs 7.8.2 marble test run through the real <code>TestScheduler</code> and played back one frame per column:
+    expected values are rings, actual values are fills, every subscription bar is the scheduler's own log. The pipelines are
+    written here, not rxjs tests. Pick a spec:
+  </span>
+</p>
+<nav class="rx-picker" aria-label="Marble specs by operator family"><div class="rx-subnav"><span class="rx-subnav-label">time</span><a href="./debounceTime.html">debounceTime</a><a href="./auditTime.html">auditTime</a><a href="./throttleTime.html">throttleTime</a><a href="./sampleTime.html">sampleTime</a><a href="./delay.html">delay</a><a href="./timeout.html">timeout</a><a href="./bufferTime.html">bufferTime</a></div>
+<div class="rx-subnav"><span class="rx-subnav-label">higher-order</span><a href="./mergeMap.html">mergeMap</a><a href="./switchMap.html">switchMap</a><a href="./concatMap.html">concatMap</a><a href="./concatMapMany.html">concatMapMany</a><a href="./exhaustMap.html">exhaustMap</a><a href="./mergeAll.html">mergeAll</a><a href="./switchAll.html">switchAll</a><a href="./concatAll.html">concatAll</a><a href="./expand.html">expand</a><a href="./expandMany.html">expandMany</a></div>
+<div class="rx-subnav"><span class="rx-subnav-label">combination</span><a href="./combineLatestWith.html">combineLatestWith</a><a href="./zipWith.html">zipWith</a><a href="./mergeWith.html">mergeWith</a><a href="./concatWith.html">concatWith</a><a href="./withLatestFrom.html">withLatestFrom</a><a href="./startWith.html">startWith</a><a href="./raceWith.html">raceWith</a><a href="./forkJoin.html">forkJoin</a></div>
+<div class="rx-subnav"><span class="rx-subnav-label">filtering</span><a href="./filter.html">filter</a><a href="./take.html">take</a><a href="./takeLast.html">takeLast</a><a href="./takeUntil.html">takeUntil</a><a href="./takeWhile.html">takeWhile</a><a href="./skip.html">skip</a><a href="./skipUntil.html">skipUntil</a><a href="./sample.html">sample</a><a href="./skipWhile.html">skipWhile</a><a href="./first.html">first</a><a href="./last.html">last</a><a href="./distinctUntilChanged.html">distinctUntilChanged</a><a href="./distinct.html">distinct</a></div>
+<div class="rx-subnav"><span class="rx-subnav-label">transformation</span><a href="./map.html">map</a><a href="./scan.html">scan</a><a href="./reduce.html">reduce</a><a href="./pairwise.html">pairwise</a><a href="./bufferCount.html">bufferCount</a><a href="./buffer.html">buffer</a><a href="./toArray.html">toArray</a></div>
+<div class="rx-subnav"><span class="rx-subnav-label">errors &amp; utility</span><a href="./catchError.html">catchError</a><a href="./retry.html">retry</a><a href="./repeat.html">repeat</a><a href="./finalize.html">finalize</a><a href="./tap.html">tap</a><a href="./defaultIfEmpty.html">defaultIfEmpty</a><a href="./throwIfEmpty.html">throwIfEmpty</a></div>
+<div class="rx-subnav"><span class="rx-subnav-label">multicasting</span><a href="./share.html">share</a><a href="./shareReplay.html">shareReplay</a></div>
+<div class="rx-subnav"><span class="rx-subnav-label">pipelines</span><a href="./mapThenFilter.html">mapThenFilter</a><a href="./autocomplete.html">autocomplete</a></div></nav>
+<footer class="rx-attribution">rxjs-visualizer
+
+The marble tests animated on the spec page (quoted above each entry of
+src/specs.ts) and reproduced in docs/rxjs-7.8.2-defining-operator-tests.md
+are from the ReactiveX/rxjs project, tag 7.8.2:
+
+  Copyright (c) 2015-2018 Google, Inc., Netflix, Inc., Microsoft Corp. and contributors
+
+  Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+The full license text is reproduced at the end of
+docs/rxjs-7.8.2-defining-operator-tests.md. The test bodies are quoted
+verbatim; only surrounding code, indentation and typed spellings of
+untyped expressions were added.</footer>
+</body>
+</html>

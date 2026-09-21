@@ -1,0 +1,641 @@
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background: #1e1e1e;
+  color: #ffffff;
+  font-family: ui-monospace, Consolas, monospace;
+}
+
+/* Page switcher shared by index.html and glitch.html. */
+/* The attribution footer of the exported pages: the NOTICE, as the quoted rxjs tests require. */
+.rx-attribution {
+  margin-top: 24px;
+  padding: 16px 20px 28px;
+  border-top: 1px solid #333333;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #9e9e9e;
+  white-space: pre-wrap;
+}
+
+/* The masthead: the title, and under it the credit line that the published pages carry too. */
+.rx-masthead {
+  padding: 14px 20px 6px;
+}
+
+.rx-masthead h1 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #e0e0e0;
+}
+
+.rx-credit {
+  margin: 2px 0 0;
+  font-size: 12px;
+  color: #9e9e9e;
+}
+
+.rx-nav {
+  display: flex;
+  gap: 20px;
+  padding: 10px 20px;
+  border-bottom: 1px solid #333333;
+  font-size: 13px;
+}
+
+.rx-nav a {
+  color: #9e9e9e;
+  text-decoration: none;
+}
+
+.rx-nav a:hover {
+  color: #ffffff;
+}
+
+.rx-nav a.is-current {
+  color: #ffca28;
+}
+
+/* Second-level switcher on the spec page: one link per marble test. */
+.rx-subnav {
+  display: flex;
+  gap: 16px;
+  padding: 6px 20px;
+  border-bottom: 1px solid #333333;
+  font-size: 12px;
+}
+
+.rx-subnav-label {
+  color: #6f6f6f;
+}
+
+.rx-subnav a {
+  color: #9e9e9e;
+  text-decoration: none;
+}
+
+.rx-subnav a:hover {
+  color: #ffffff;
+}
+
+.rx-subnav a.is-current {
+  color: #ffca28;
+}
+
+/* The spec picker: one .rx-subnav row per operator family, the labels aligned in a column. */
+.rx-picker {
+  padding: 3px 0;
+  border-bottom: 1px solid #333333;
+}
+
+.rx-picker .rx-subnav {
+  padding: 3px 20px;
+  border-bottom: 0;
+}
+
+.rx-picker .rx-subnav-label {
+  min-width: 130px;
+}
+
+/* Playback controls under the note: play/pause, the scrubber, the frame counter. */
+.rx-controls {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 6px 20px;
+  border-bottom: 1px solid #333333;
+  font-size: 12px;
+}
+
+.rx-button {
+  font: inherit;
+  color: #ffca28;
+  background: #2a2a2a;
+  border: 1px solid #444444;
+  border-radius: 3px;
+  padding: 2px 12px;
+  min-width: 64px;
+  cursor: pointer;
+}
+
+.rx-button:hover {
+  border-color: #ffca28;
+}
+
+#spec-scrub {
+  flex: 1;
+  max-width: 480px;
+  accent-color: #ffca28;
+}
+
+.rx-frame {
+  color: #9e9e9e;
+  min-width: 140px;
+}
+
+/* The spec page's note is a row: the text, then a reserved column for the hover readout, so the readout never reflows the page. */
+.rx-spec-note,
+.rx-note:has(.rx-readout) {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.rx-note-text {
+  flex: 1;
+}
+
+.rx-readout {
+  flex: 0 0 280px;
+  text-align: right;
+  white-space: nowrap;
+  color: #ffca28;
+}
+
+.rx-note {
+  margin: 0;
+  padding: 8px 20px;
+  border-bottom: 1px solid #333333;
+  font-size: 12px;
+  color: #9e9e9e;
+}
+
+.rx-note code {
+  color: #e0e0e0;
+}
+
+.rx-visualizer {
+  --rx-step: 400ms;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: auto;
+}
+
+.rx-lane-title {
+  position: absolute;
+  left: 20px;
+  font-weight: bold;
+}
+
+.rx-lane-line {
+  position: absolute;
+  height: 2px;
+  background: #444444;
+}
+
+/* One step of timeline, from the source lane down to the sink lane.
+   Even and odd bands alternate so each interval reads as its own column. */
+.rx-band {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.rx-band.is-even {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.rx-band.is-odd {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* Marks the band's start time at its left edge, like an axis tick. */
+.rx-band-label {
+  position: absolute;
+  left: 6px;
+  bottom: 6px;
+  font-size: 11px;
+  color: #6f6f6f;
+}
+
+/* One emitted value. Position (left/top) is set inline by the renderer. */
+.rx-node {
+  position: absolute;
+  box-sizing: border-box;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  z-index: 10;
+  transition:
+    background-color 200ms ease,
+    border-color 200ms ease,
+    color 200ms ease;
+}
+
+/* Carries the untransformed source value until the arrow arrives. */
+.rx-node.is-pending {
+  background: transparent;
+  border: 2px dashed #777777;
+  color: #999999;
+}
+
+/* Shows the value the operator actually produced. */
+.rx-node.is-settled {
+  background: #e53935;
+  border: 2px solid #e53935;
+  color: #ffffff;
+  animation: rx-pop 300ms ease-out;
+}
+
+/* Travels from the source value to each dependent value, one lane per step. */
+.rx-arrow {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  color: #ffca28;
+  z-index: 20;
+  filter: drop-shadow(0 0 4px rgba(255, 202, 40, 0.6));
+  transition:
+    top var(--rx-step) ease-in-out,
+    opacity 300ms ease;
+}
+
+.rx-arrow.is-done {
+  opacity: 0;
+}
+
+/* ---- spec page: frame ruler, marble lanes, playhead ---- */
+
+/* Renderers toggle `hidden`; keep it winning over display rules on .rx-node etc. */
+.rx-visualizer [hidden] {
+  display: none !important;
+}
+
+.rx-ruler-unit,
+.rx-ruler-num {
+  position: absolute;
+  font-size: 11px;
+  color: #6f6f6f;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.rx-ruler-num.is-major {
+  color: #e0e0e0;
+}
+
+.rx-ruler-tick {
+  position: absolute;
+  width: 1px;
+  background: #4a4844;
+}
+
+.rx-rowline {
+  position: absolute;
+  height: 1px;
+  background: #3a3a3a;
+}
+
+.rx-lane-detail {
+  position: absolute;
+  font-size: 11px;
+  color: #9e9e9e;
+  white-space: nowrap;
+}
+
+/* The raw marble string, one character per frame, above its lane. */
+.rx-charstrip {
+  position: absolute;
+  font-size: 12px;
+  color: #6f6f6f;
+  text-align: center;
+}
+
+/* What the spec expects: a ring. Actual values are the usual red fill. */
+.rx-node.is-expected {
+  background: transparent;
+  border: 2px solid #7a7772;
+  color: #a09d97;
+}
+
+.rx-complete {
+  position: absolute;
+  width: 3px;
+  background: #ffffff;
+  z-index: 5;
+}
+
+.rx-complete.is-expected {
+  opacity: 0.4;
+}
+
+.rx-error {
+  position: absolute;
+  color: #e53935;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1;
+}
+
+/* Subscription span (^ ... !) under the source lane. */
+.rx-subbar {
+  position: absolute;
+  height: 3px;
+  background: rgba(255, 202, 40, 0.45);
+}
+
+.rx-subglyph {
+  position: absolute;
+  font-size: 12px;
+  color: #ffca28;
+}
+
+/* Causal path: value drops onto the operator lane, its window runs, an arrow drops the result. */
+.rx-drop {
+  position: absolute;
+  width: 0;
+  border-left: 1px dotted #ffca28;
+  opacity: 0.7;
+}
+
+.rx-window {
+  position: absolute;
+  height: 5px;
+  border-radius: 2px;
+  background: #ffca28;
+  transition: width var(--rx-step) linear;
+}
+
+.rx-window.is-cancelled {
+  height: 0;
+  background: transparent;
+  border-top: 2px dashed #7a7772;
+}
+
+/* An outer value waiting for an earlier inner to finish (concatMap). */
+.rx-window.is-queued {
+  height: 0;
+  background: transparent;
+  border-top: 2px dotted #b0aca5;
+}
+
+.rx-cross {
+  position: absolute;
+  font-size: 16px;
+  line-height: 1;
+  color: #7a7772;
+}
+
+/* A tick of the operator's own clock opening a window (sampleTime, bufferTime). */
+.rx-clock {
+  position: absolute;
+  width: 2px;
+  height: 12px;
+  background: #ffca28;
+  opacity: 0.8;
+}
+
+/* Array values: a pill as wide as its label, centered on its frame. */
+.rx-node.is-wide {
+  width: auto;
+  padding: 0 7px;
+  border-radius: 13px;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+/* The pop must keep the pill centered: a scale-only transform would drop the translate for 300 ms. */
+.rx-node.is-wide.is-settled {
+  animation-name: rx-pop-wide;
+}
+
+@keyframes rx-pop-wide {
+  0% {
+    transform: translateX(-50%) scale(1);
+  }
+  40% {
+    transform: translateX(-50%) scale(1.35);
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+  }
+}
+
+.rx-arrow.is-small,
+.rx-arrow.is-small svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Virtual time: the playhead slides one frame per tick; frames ahead are dimmed. */
+.rx-playhead {
+  position: absolute;
+  width: 2px;
+  background: #ffca28;
+  z-index: 30;
+  box-shadow: 0 0 6px rgba(255, 202, 40, 0.6);
+  transition: left var(--rx-step) linear;
+}
+
+.rx-playhead-label {
+  position: absolute;
+  transform: translateX(-50%); /* centered under the playhead line */
+  font-size: 11px;
+  color: #2a2000;
+  background: #ffca28;
+  padding: 1px 6px;
+  border-radius: 2px;
+  z-index: 31;
+  white-space: nowrap;
+  transition: left var(--rx-step) linear;
+}
+
+.rx-future {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.38);
+  z-index: 25;
+  pointer-events: none;
+  transition:
+    left var(--rx-step) linear,
+    width var(--rx-step) linear;
+}
+
+@keyframes rx-pop {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.35);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* ---- spec page: the visualization at full width, the operator's text block under it ----
+   One layout for every spec, a single operator or a twelve-lane pipeline alike. */
+
+.rx-spec-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+/* The visualizer keeps its full width and scrolls horizontally inside the page's width. */
+.rx-spec-layout > #app {
+  min-width: 0;
+}
+
+/* The renderer gives the spec root the drawing's height; no viewport-tall minimum, so the text follows the drawing. */
+.rx-visualizer.rx-spec {
+  min-height: 0;
+}
+
+/* The text flows in two columns on a wide window, so lines stay readable at full width. */
+.rx-explainer {
+  box-sizing: border-box;
+  padding: 18px 28px 40px;
+  border-top: 1px solid #333333;
+  font-size: 13px;
+  line-height: 1.55;
+  color: #b8b8b8;
+  column-count: 2;
+  column-gap: 56px;
+}
+
+/* The title and summary run across both columns; a section keeps its heading and does not break in the middle. */
+.rx-explainer-title,
+.rx-explainer-summary {
+  column-span: all;
+}
+
+.rx-explainer-heading {
+  break-after: avoid;
+}
+
+.rx-explainer-code,
+.rx-explainer-essentials,
+.rx-explainer-result,
+.rx-explainer-inspec,
+.rx-explainer-workflow li {
+  break-inside: avoid;
+}
+
+.rx-explainer > * {
+  max-width: 68ch;
+}
+
+.rx-explainer-title {
+  margin: 0 0 4px;
+  font-size: 22px;
+  color: #ffca28;
+}
+
+.rx-explainer-summary {
+  margin: 0 0 8px;
+  color: #ffffff;
+}
+
+.rx-explainer-heading {
+  margin: 18px 0 6px;
+  font-size: 11px;
+  font-weight: normal;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8a8a8a;
+}
+
+.rx-explainer-code {
+  margin: 0;
+  padding: 10px 12px;
+  overflow-x: auto;
+  background: #161616;
+  border: 1px solid #333333;
+  border-radius: 3px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #e0e0e0;
+}
+
+.rx-explainer-essentials {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  column-gap: 16px;
+  row-gap: 4px;
+  margin: 0;
+}
+
+.rx-explainer-essentials dt {
+  color: #ffca28;
+  white-space: nowrap;
+}
+
+.rx-explainer-essentials dd {
+  margin: 0;
+}
+
+.rx-explainer-result {
+  margin: 0;
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.rx-explainer-workflow {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.rx-explainer-workflow li {
+  margin: 0 0 6px;
+  padding-left: 4px;
+}
+
+.rx-explainer-workflow li::marker {
+  color: #ffca28;
+}
+
+.rx-explainer-inspec {
+  margin: 0;
+}
+
+/* Narrow windows: the text block in one column. */
+@media (max-width: 1100px) {
+  .rx-explainer {
+    column-count: 1;
+  }
+}
+
+/* Lane titles and details stay at the left edge while the timeline scrolls:
+   a track as wide as the timeline holds a sticky label, which moves inside it. */
+.rx-sticky-track {
+  position: absolute;
+  pointer-events: none;
+}
+
+.rx-sticky {
+  position: sticky;
+  display: inline-block;
+  white-space: nowrap;
+  padding-right: 6px;
+  pointer-events: none;
+}
+
+/* A lane's detail wraps inside the label column, two lines at most; hovering the label puts the whole text in the readout. */
+.rx-lane-detail.rx-sticky {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+  white-space: normal;
+  line-height: 1.2;
+}
+
+/* Only once scrolled do the labels need to cover what slides under them. */
+.rx-spec.is-scrolled .rx-sticky-track {
+  z-index: 40;
+}
+
+.rx-spec.is-scrolled .rx-sticky {
+  background: #1e1e1e;
+}
