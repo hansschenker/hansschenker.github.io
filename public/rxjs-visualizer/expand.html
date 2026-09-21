@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
 <title>RxJS Visualizer · expand</title>
-<link rel="stylesheet" href="./style.css" />
+<link rel="stylesheet" href="./style.css?v=c805a6b3" />
 </head>
 <body>
 <header class="rx-masthead">
@@ -63,6 +63,6 @@ docs/rxjs-7.8.2-defining-operator-tests.md. The test bodies are quoted
 verbatim; only surrounding code, indentation and typed spellings of
 untyped expressions were added.</footer>
 <script id="spec-data" type="application/json">{"frames":10,"firstFrame":0,"xStart":250,"right":550,"scale":30,"frameMs":400,"lanes":[{"label":"e1","detail":"hot('--x----|') · x=1","top":38,"bottom":148},{"label":"expand(x => (x === 8 ? EMPTY : e2.pipe(map(c => c * x))))","detail":"inner = cold('--c|') · c=2 · 8 → no inner","top":148,"bottom":204},{"label":"inner 1","detail":"for 1","top":204,"bottom":276},{"label":"inner 2","detail":"for 2 · from inner 1","top":276,"bottom":348},{"label":"inner 3","detail":"for 4 · from inner 2","top":348,"bottom":420},{"label":"expected vs actual","detail":"'--a-b-c-d|' · a=1 b=2 c=4 d=8","top":420,"bottom":530}],"readouts":{"0:2":"e1 · frame 2 · 1","0:7":"e1 · frame 7 · |","2:4":"inner 1 · frame 4 · 2","2:5":"inner 1 · frame 5 · |","3:6":"inner 2 · frame 6 · 4","3:7":"inner 2 · frame 7 · |","4:8":"inner 3 · frame 8 · 8","4:9":"inner 3 · frame 9 · |","5:2":"expected vs actual · frame 2 · 1","5:4":"expected vs actual · frame 4 · 2","5:6":"expected vs actual · frame 6 · 4","5:8":"expected vs actual · frame 8 · 8","5:9":"expected vs actual · frame 9 · |"}}</script>
-<script src="./player.js"></script>
+<script src="./player.js?v=3e2ad0a9"></script>
 </body>
 </html>

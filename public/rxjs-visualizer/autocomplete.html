@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
 <title>RxJS Visualizer · autocomplete</title>
-<link rel="stylesheet" href="./style.css" />
+<link rel="stylesheet" href="./style.css?v=c805a6b3" />
 </head>
 <body>
 <header class="rx-masthead">
@@ -75,6 +75,6 @@ docs/rxjs-7.8.2-defining-operator-tests.md. The test bodies are quoted
 verbatim; only surrounding code, indentation and typed spellings of
 untyped expressions were added.</footer>
 <script id="spec-data" type="application/json">{"frames":35,"firstFrame":0,"xStart":250,"right":1300,"scale":30,"frameMs":400,"lanes":[{"label":"input","detail":"hot('-a-b-c-d---e-----f----g----|') · a=R b=Rx c=RxJ d=RxJS e=RXJS f=Rx g=RxJ","top":38,"bottom":148},{"label":"map(s => s.toLowerCase())","detail":"","top":148,"bottom":204},{"label":"after map","detail":"'-a-b-c-d---e-----f----g----|' · a=r b=rx c=rxj d=rxjs e=rxjs f=rx g=rxj","top":204,"bottom":314},{"label":"debounceTime(t)","detail":"t = time('---|') = 3 frames","top":314,"bottom":424},{"label":"after debounceTime","detail":"'----------d---e-----f----g-|' · d=rxjs e=rxjs f=rx g=rxj","top":424,"bottom":534},{"label":"distinctUntilChanged()","detail":"","top":534,"bottom":590},{"label":"after distinctUntilChanged","detail":"'----------d---------f----g-|' · d=rxjs f=rx g=rxj","top":590,"bottom":700},{"label":"switchMap(term => search(term))","detail":"inner = cold('------(x|)')","top":700,"bottom":756},{"label":"inner 1","detail":"for rxjs","top":756,"bottom":828},{"label":"inner 2","detail":"for rx","top":828,"bottom":900},{"label":"inner 3","detail":"for rxj","top":900,"bottom":972},{"label":"expected vs actual","detail":"'----------------x--------------(y|)' · x=[rxjs] y=[rxj]","top":972,"bottom":1082}],"readouts":{"0:1":"input · frame 1 · R","0:3":"input · frame 3 · Rx","0:5":"input · frame 5 · RxJ","0:7":"input · frame 7 · RxJS","0:11":"input · frame 11 · RXJS","0:17":"input · frame 17 · Rx","0:22":"input · frame 22 · RxJ","0:27":"input · frame 27 · |","2:1":"after map · frame 1 · r","2:3":"after map · frame 3 · rx","2:5":"after map · frame 5 · rxj","2:7":"after map · frame 7 · rxjs","2:11":"after map · frame 11 · rxjs","2:17":"after map · frame 17 · rx","2:22":"after map · frame 22 · rxj","2:27":"after map · frame 27 · |","4:10":"after debounceTime · frame 10 · rxjs","4:14":"after debounceTime · frame 14 · rxjs","4:20":"after debounceTime · frame 20 · rx","4:25":"after debounceTime · frame 25 · rxj","4:27":"after debounceTime · frame 27 · |","6:10":"after distinctUntilChanged · frame 10 · rxjs","6:20":"after distinctUntilChanged · frame 20 · rx","6:25":"after distinctUntilChanged · frame 25 · rxj","6:27":"after distinctUntilChanged · frame 27 · |","8:16":"inner 1 · frame 16 · [rxjs] |","10:31":"inner 3 · frame 31 · [rxj] |","11:16":"expected vs actual · frame 16 · [rxjs]","11:31":"expected vs actual · frame 31 · [rxj] |"}}</script>
-<script src="./player.js"></script>
+<script src="./player.js?v=3e2ad0a9"></script>
 </body>
 </html>
