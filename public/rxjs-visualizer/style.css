@@ -355,6 +355,26 @@ body {
   color: #ffca28;
 }
 
+/* A time operator's t, measured on its row from the ruler's 0 in the subscription bar's colour: t columns of the timeline. */
+.rx-measure {
+  position: absolute;
+  height: 2px;
+  background: rgba(255, 202, 40, 0.45);
+}
+
+.rx-measure-tick {
+  position: absolute;
+  width: 2px;
+  background: #ffca28;
+}
+
+.rx-measure-label {
+  position: absolute;
+  font-size: 11px;
+  color: #ffca28;
+  white-space: nowrap;
+}
+
 /* Causal path: value drops onto the operator lane, its window runs, an arrow drops the result. */
 .rx-drop {
   position: absolute;
