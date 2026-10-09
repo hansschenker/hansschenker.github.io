@@ -1,5 +1,17 @@
 [
   {
+    "name": "RxJS User-Friendly Names",
+    "repo": "hansschenker/rxjs-userfriendly",
+    "url": "https://netxpert.ch/rxjs-userfriendly/",
+    "tags": [
+      "rxjs",
+      "operators",
+      "naming",
+      "grammar"
+    ],
+    "description": "User-friendly names for technical RxJS operator names, built from a 67-token grammar where every token has one meaning and the name states the policy. Interactive list with search and a grammar token filter."
+  },
+  {
     "name": "RxJS Operator Finder",
     "repo": "hansschenker/rxjs-operator-finder-links",
     "url": "https://hansschenker.github.io/rxjs-operator-finder-links/",
@@ -9,17 +21,6 @@
       "tooling"
     ],
     "description": "Find RxJS operators by order, time/value, and intent."
-  },
-  {
-    "name": "RxJS Operators — Human-Friendly Names",
-    "repo": "hansschenker/rxjs-operators-custom-names",
-    "url": "https://hansschenker.github.io/rxjs-operators-custom-names/",
-    "tags": [
-      "rxjs",
-      "operators",
-      "naming"
-    ],
-    "description": "Every RxJS operator re-exported with a descriptive alias plus live interactive demos."
   },
   {
     "name": "RxJS Operators Documentation",
@@ -64,17 +65,6 @@
       "semantics"
     ],
     "description": "Semantic fingerprints for 111 RxJS operators — behavior descriptions generated from a twelve-coordinate semantic model."
-  },
-  {
-    "name": "RxJS Operator Renaming",
-    "repo": "hansschenker/rxjs-operator-renaming",
-    "url": "https://netxpert.ch/rxjs-operator-renaming/",
-    "tags": [
-      "rxjs",
-      "operators",
-      "renaming"
-    ],
-    "description": "A curried operator algebra for RxJS — roots dispatch on boundary combinators to the official operators, with an interactive root × boundary matrix."
   },
   {
     "name": "RxJS Subject Multicast Strategies",

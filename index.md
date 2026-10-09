@@ -7,9 +7,9 @@ hero:
   tagline: Interactive demos, operator references, and tooling for RxJS developers.
 
 features:
-  - title: RxJS Operators — Human-Friendly Names
-    details: Every RxJS operator re-exported with a descriptive alias plus live interactive demos.
-    link: https://netxpert.ch/rxjs-operators-custom-names/
+  - title: RxJS User-Friendly Names
+    details: User-friendly names for technical RxJS operator names, built from a 67-token grammar where every token has one meaning and the name states the policy. Interactive list with search and a grammar token filter.
+    link: https://netxpert.ch/rxjs-userfriendly/
   - title: RxJS Operators Documentation
     details: 265-page comprehensive RxJS operator reference using the Eight-Policy Framework.
     link: https://netxpert.ch/rxjs-operators-documentation/
@@ -25,9 +25,6 @@ features:
   - title: RxJS Operator Semantics
     details: Semantic fingerprints for 111 RxJS operators — behavior descriptions generated from a twelve-coordinate semantic model.
     link: https://netxpert.ch/rxjs-operator-semantics/
-  - title: RxJS Operator Renaming
-    details: A curried operator algebra for RxJS — roots dispatch on boundary combinators to the official operators, with an interactive root × boundary matrix.
-    link: https://netxpert.ch/rxjs-operator-renaming/
   - title: RxJS Subject Multicast Strategies
     details: Every multicasting strategy from RxJS 4 to RxJS 7 — mechanics, runnable samples per strategy, Vitest-pinned reset profiles, and the faithful-migration map.
     link: https://netxpert.ch/rxjs-subject-multicast-strategies/
