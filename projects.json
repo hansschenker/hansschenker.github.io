@@ -23,6 +23,18 @@
     "description": "Find RxJS operators by order, time/value, and intent."
   },
   {
+    "name": "RxJS Operator Navigator",
+    "repo": "hansschenker/rxjs-operator-navigator",
+    "url": "https://netxpert.ch/rxjs-operator-navigator/",
+    "tags": [
+      "rxjs",
+      "operators",
+      "patterns",
+      "tooling"
+    ],
+    "description": "Find any of the 110 RxJS 7 operators by answering four questions about the packages it moves: what happens to them, what decides, how many come out, and which strategy joins several streams."
+  },
+  {
     "name": "RxJS Operators Documentation",
     "repo": "hansschenker/rxjs-operators-documentation",
     "url": "https://hansschenker.github.io/rxjs-operators-documentation/",
@@ -65,17 +77,6 @@
       "semantics"
     ],
     "description": "Semantic fingerprints for 111 RxJS operators — behavior descriptions generated from a twelve-coordinate semantic model."
-  },
-  {
-    "name": "RxJS Subject Multicast Strategies",
-    "repo": "hansschenker/rxjs-subject-multicast-strategies",
-    "url": "https://netxpert.ch/rxjs-subject-multicast-strategies/",
-    "tags": [
-      "rxjs",
-      "multicasting",
-      "subjects"
-    ],
-    "description": "Every multicasting strategy from RxJS 4 to RxJS 7 — mechanics, runnable samples per strategy, Vitest-pinned reset profiles, the faithful-migration map, and an interactive Reset Flags Playground."
   },
   {
     "name": "RxJS Visualizer",
