@@ -1,5 +1,17 @@
 [
   {
+    "name": "RxJS Operator Navigator",
+    "repo": "hansschenker/rxjs-operator-navigator",
+    "url": "https://netxpert.ch/rxjs-operator-navigator/",
+    "tags": [
+      "rxjs",
+      "operators",
+      "patterns",
+      "tooling"
+    ],
+    "description": "Find any of the 110 RxJS 7 operators by answering four questions about the packages it moves: what happens to them, what decides, how many come out, and which strategy joins several streams."
+  },
+  {
     "name": "RxJS User-Friendly Names",
     "repo": "hansschenker/rxjs-userfriendly",
     "url": "https://netxpert.ch/rxjs-userfriendly/",
@@ -21,18 +33,6 @@
       "tooling"
     ],
     "description": "Find RxJS operators by order, time/value, and intent."
-  },
-  {
-    "name": "RxJS Operator Navigator",
-    "repo": "hansschenker/rxjs-operator-navigator",
-    "url": "https://netxpert.ch/rxjs-operator-navigator/",
-    "tags": [
-      "rxjs",
-      "operators",
-      "patterns",
-      "tooling"
-    ],
-    "description": "Find any of the 110 RxJS 7 operators by answering four questions about the packages it moves: what happens to them, what decides, how many come out, and which strategy joins several streams."
   },
   {
     "name": "RxJS Operators Documentation",
