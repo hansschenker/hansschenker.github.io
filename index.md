@@ -29,6 +29,6 @@ features:
     details: Semantic fingerprints for 111 RxJS operators — behavior descriptions generated from a twelve-coordinate semantic model.
     link: https://netxpert.ch/rxjs-operator-semantics/
   - title: RxJS Visualizer
-    details: Sixty rxjs 7.8.2 marble tests and four pipelines, run through the real TestScheduler and played back one frame per column — rings for expected values, fills for actual, every subscription bar from the scheduler's own log, and a text block that explains each operator. Created with the help of Claude Fable 5.1.
+    details: All 113 operators of rxjs 7.8.2 as their own marble tests, plus four pipelines, run through the real TestScheduler and played back one frame per column — rings for expected values, fills for actual, every subscription bar from the scheduler's own log, and a text block that explains each operator. Created with the help of Claude Fable 5.1.
     link: https://netxpert.ch/rxjs-visualizer/
 ---
