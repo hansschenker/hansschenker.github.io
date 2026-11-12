@@ -22,12 +22,33 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 24
           cache: npm
 
       - run: npm ci || npm i
 
       - run: npx vitepress build
+
+      - name: Check out RxJS Type Notation documentation
+        uses: actions/checkout@v4
+        with:
+          repository: hansschenker/rxjs-type-notation
+          ref: main
+          path: .notation-source
+          persist-credentials: false
+
+      - name: Install notation documentation dependencies
+        run: npm ci
+        working-directory: .notation-source
+
+      - name: Check and build notation documentation
+        run: npm run build
+        working-directory: .notation-source
+
+      - name: Include notation documentation in the portfolio
+        run: |
+          mkdir -p .vitepress/dist/rxjs-type-notation
+          cp -a .notation-source/docs/.vitepress/dist/. .vitepress/dist/rxjs-type-notation/
 
       - uses: actions/configure-pages@v5
 

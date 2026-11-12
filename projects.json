@@ -1,5 +1,17 @@
 [
   {
+    "name": "RxJS Type Notation",
+    "repo": "hansschenker/rxjs-type-notation",
+    "url": "https://netxpert.ch/rxjs-type-notation/",
+    "tags": [
+      "rxjs",
+      "types",
+      "notation",
+      "documentation"
+    ],
+    "description": "Haskell-inspired, succinct signatures for RxJS operators, with explicit timing, cancellation, and sharing policies. Co-authored by ChatGPT."
+  },
+  {
     "name": "RxJS Operator Navigator",
     "repo": "hansschenker/rxjs-operator-navigator",
     "url": "https://netxpert.ch/rxjs-operator-navigator/",
