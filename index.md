@@ -8,7 +8,7 @@ hero:
 
 features:
   - title: RxJS Type Notation
-    details: Haskell-inspired, succinct signatures for RxJS operators, with explicit timing, cancellation, and sharing policies. A notation guide, operator catalog, and compiler-checked TypeScript examples, co-authored by ChatGPT.
+    details: A 10-page guide to Haskell-inspired, succinct RxJS signatures, with 23 operator entries, explicit timing, cancellation, and sharing policies, and compiler-checked TypeScript examples. Co-authored by ChatGPT.
     link: https://netxpert.ch/rxjs-type-notation/
   - title: RxJS Operator Navigator
     details: Find any of the 110 RxJS 7 operators by answering four questions about the packages it moves — what happens to them, what decides, how many come out, and which strategy joins several streams. Signatures come straight from the RxJS source; the verb + suffix name grammar links every operator to its siblings.

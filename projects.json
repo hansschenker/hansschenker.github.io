@@ -9,7 +9,7 @@
       "notation",
       "documentation"
     ],
-    "description": "Haskell-inspired, succinct signatures for RxJS operators, with explicit timing, cancellation, and sharing policies. Co-authored by ChatGPT."
+    "description": "A 10-page guide to Haskell-inspired RxJS signatures, with 23 operator entries, explicit timing, cancellation, and sharing policies, and compiler-checked TypeScript examples. Co-authored by ChatGPT."
   },
   {
     "name": "RxJS Operator Navigator",
